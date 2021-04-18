@@ -21,7 +21,7 @@ def slacker():
         assert error.response['error']
         print(f"yourethebest-bot got error: {error.response['error']}")
 
-schedule.every().sunday.at('14:08').do(slacker)
+schedule.every().sunday.at('15:00').do(slacker)
 
 while True:
     schedule.run_pending()
